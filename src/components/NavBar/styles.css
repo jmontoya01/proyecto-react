@@ -1,0 +1,32 @@
+.navbar-container{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    /* background-color: black; */
+}
+
+.imglogo {
+    height: 100px;
+    width: 100px;
+}
+
+.list-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    list-style-type: none;
+}
+
+.nav-btn{
+    background-color: transparent;
+    border: none;
+    color: black;
+    cursor: pointer;
+
+}
+
+
+
