@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <ItemListContainer greeting="Bien venido a Makers m 3D" />
+      <ItemListContainer greeting="Bienvenidos a Makers m 3D" />
     </div>
   );
 }
