@@ -1,8 +1,8 @@
-
+import "./styles.css"
 
 const ItemListContainer = ({ greeting }) => {
     return (
-        <div>
+        <div className="titulo">
             {greeting}
         </div>
     )
