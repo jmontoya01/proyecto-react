@@ -9,7 +9,7 @@ function NavBarApp() {
     return (
         <Navbar expand="lg" className="bg-body-tertiary" bg="dark" data-bs-theme="dark">
             <Container>
-                <Navbar.Brand href="#home"><img className="imglogo" src="./images/logomakers3d.jpg" alt="logo makers m 3d" /></Navbar.Brand>
+                <Navbar.Brand href="#home"><img className="imglogo"  src="./images/logosolo.jpg" alt="logo makers m 3d" /></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
