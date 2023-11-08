@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import ItemList from "../ItemList/ItemList"
+import ItemList from "../../components/ItemList/ItemList"
 import "./styles.css"
 
 const ItemListContainer = ({ greeting }) => {
@@ -9,7 +9,7 @@ const ItemListContainer = ({ greeting }) => {
             fetch('https://fakestoreapi.com/products')
             .then ((response) => response.json())
             .then ((data) => setProductList(data))
-            .catch ((error) => console.log(error))
+            .catch ((error) => console.error(error))
         };
 
         useEffect(() => {

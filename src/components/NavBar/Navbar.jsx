@@ -2,27 +2,23 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import CartWidget from "../CartWidget/CartWidget"
+import { Link } from 'react-router-dom';
+import "./styles.css"
 
 function NavBarApp() {
     return (
         <Navbar expand="lg" className="bg-body-tertiary" bg="dark" data-bs-theme="dark">
             <Container>
-                <Navbar.Brand href="#home"><img className="imglogo"  src="./images/logosolo.jpg" alt="logo makers m 3d" /></Navbar.Brand>
+                <Navbar.Brand href="/"><img className="imglogo"  src="../images/logosolo.jpg" alt="logo makers m 3d" /></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#link">Figuras de Acción</Nav.Link>
-                        <NavDropdown title="Accesorios" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">Espadas</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">
-                                Diseños 3D
-                            </NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Varias</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                        </NavDropdown>                       
+                        <Link className='linkbtn' to={"/"}>Home |</Link>
+                        <Link className='linkbtn' to={"/category/electronics"}>Electronics</Link>
+                        <Link className='linkbtn' to={"/category/jewelery"}>Joyería</Link>
+                        <Link className='linkbtn' to={"/category/men's-clothing"}>Ropa de hombre</Link>
+                        <Link className='linkbtn' to={"/category/women's-clothing"}>Ropa de mujer</Link>                     
                     </Nav>
                     <CartWidget />
                 </Navbar.Collapse>
@@ -32,7 +28,6 @@ function NavBarApp() {
 }
 
 export default NavBarApp;
-
 
 
 

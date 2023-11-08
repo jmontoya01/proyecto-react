@@ -1,11 +1,25 @@
-#navBarFondo{
-    background-color: black;
+.me-auto{
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.linkbtn {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.2rem;
+}
+
+.linkbtn:hover{
+    color:crimson;
+    
 }
 
 
 
 
-/* .navbar-container{
+/* 
+.navbar-container{
     display: flex;
     flex-direction: row;
     justify-content:space-between;
@@ -39,7 +53,7 @@
 
 .nav-btn:hover {
     color:crimson;
-} */
+}  */
 
 
 

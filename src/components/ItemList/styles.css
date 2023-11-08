@@ -1,4 +1,4 @@
-.containerItemList{
+.item-list-container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -7,4 +7,9 @@
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+.stylesLink{
+    text-decoration: none;
+    color: black;
 }
