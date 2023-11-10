@@ -1,0 +1,8 @@
+.itemCount-button{
+    border-radius: 5px;
+    
+}
+
+.itemCount-button:hover{
+    background-color: cadetblue;
+}

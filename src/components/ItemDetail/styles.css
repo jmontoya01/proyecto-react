@@ -1,16 +1,18 @@
 .card-containerr{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 80%;
-    height: 100%;
-    margin: 20px;
     padding: 20px;
+    height: 80vh;
     border-radius: 10px;
     box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
     box-sizing: border-box;
     overflow: hidden;
+    gap: 5px;
+}
+
+.price{
+    font-size: 30px;
 }
 
 .card-titlee{
@@ -21,7 +23,9 @@
 
 .card-imagee{
     width: 300px;
+
 }
+
 
 
 .card-descriptionn{
@@ -35,3 +39,12 @@
     text-overflow: ellipsis;
     font-size: 1.5rem;
 } 
+
+.card-button{
+    border-radius: 5px;
+    
+}
+
+.card-button:hover{
+    background-color: cadetblue;
+}

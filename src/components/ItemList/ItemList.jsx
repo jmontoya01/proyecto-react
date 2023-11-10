@@ -7,6 +7,65 @@ const ItemList = () => {
     const [items, setItems] = useState([]);
     const { id } = useParams();
 
+//     const products = [aca van los productos 
+//     {
+//             title:
+//                 price:
+//             description:
+//                 category:
+//             image:
+//     },
+//         {
+//             title:
+//                 price:
+//             description:
+//                 category:
+//             image:
+// }, {
+//             title:
+//                 price:
+//             description:
+//                 category:
+//             image:
+// }, {
+//             title:
+//                 price:
+//             description:
+//                 category:
+//             image:
+// }, {
+//             title:
+//                 price:
+//             description:
+//                 category:
+//             image:
+// }, {
+//             title:
+//                 price:
+//             description:
+//                 category:
+//             image:
+// }, {
+//             title:
+//                 price:
+//             description:
+//                 category:
+//             image:
+// }, {
+//             title:
+//                 price:
+//             description:
+//                 category:
+//             image:
+// }]
+
+    // new promise para cargar mis propios productos
+    // const fetchProducts = new Promise ((resolve, reject) => {
+    //     setTimeout(() => {
+    //         resolve(products);
+    //     }, 2000)
+    // }) 
+
     const fetchProducts = async () => {
         try {
             const response = await fetch("https://fakestoreapi.com/products");

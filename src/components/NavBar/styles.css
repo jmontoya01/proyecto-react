@@ -1,3 +1,4 @@
+
 .me-auto{
     display: flex;
     gap: 10px;
@@ -15,7 +16,16 @@
     
 }
 
+/* .color-nav{
+    background-color: black;
+} */
 
+
+
+.imglogo {
+    height: 150px;
+    width: 150px;
+}
 
 
 /* 
@@ -28,10 +38,7 @@
     padding: 10px ;
 }
 
-.imglogo {
-    height: 100px;
-    width: 100px;
-}
+
 
 .list-container{
     
