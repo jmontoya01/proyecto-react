@@ -1,9 +1,14 @@
-import React from 'react'
+// import { useState } from "react"
+// import ItemDetail from "../../components/ItemDetail/ItemDetail"
 
-const Cart = () => {
+
+const Cart = (product) => {
+    // const [productListcart, setproductListcart] = useState([])
+
+
     return (
         <div>
-
+            
         </div>
     )
 }

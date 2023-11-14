@@ -5,7 +5,6 @@ import { useState } from "react";
 
 const ItemDetail = ({itemSelected}) => {
     const [count, setCount] = useState(0);
-    const stock = 5
     const navigate = useNavigate();
     const handleNavigation = () => {
         navigate('/cart')
@@ -21,11 +20,11 @@ const ItemDetail = ({itemSelected}) => {
                 <p>{itemSelected?.description}</p>
             </div>
             <p className="price">${itemSelected?.price}</p>
-            <p >Stock: {stock}</p>
+            <p >Stock: {itemSelected?.stock}</p>
             <div>
-                <button className="card-button" onClick={handleNavigation}>Terminar compra</button>
+                <button className="card-button" onClick={handleNavigation}>Guardar producto</button>
             </div>
-            <ItemCount count={count} setCount={setCount} stock={stock} />
+            <ItemCount count={count} setCount={setCount} stock={itemSelected.stock} />
         </div>
     </div>
     );

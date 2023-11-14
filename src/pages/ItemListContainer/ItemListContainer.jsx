@@ -1,19 +1,20 @@
 import { useState, useEffect } from "react"
 import ItemList from "../../components/ItemList/ItemList"
 import "./styles.css"
+import fetchProducts from "../../components/Productos/Productos";
 
 const ItemListContainer = ({ greeting }) => {
     const [productList, setProductList ] = useState([])
 
-    const fetchProducts = () => {
-            fetch('https://fakestoreapi.com/products')
-            .then ((response) => response.json())
-            .then ((data) => setProductList(data))
-            .catch ((error) => console.error(error))
-        };
+    // const fetchProducts = () => {
+    //         fetch('https://fakestoreapi.com/products')
+    //         .then ((response) => response.json())
+    //         .then ((data) => setProductList(data))
+    //         .catch ((error) => console.error(error))
+    //     };
 
         useEffect(() => {
-            fetchProducts();
+            setProductList(fetchProducts);
         }, []);
 
         return (

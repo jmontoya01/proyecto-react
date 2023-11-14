@@ -1,5 +1,10 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
 
-.me-auto{
+.me-auto {
     display: flex;
     gap: 10px;
     text-decoration: none;
@@ -11,13 +16,13 @@
     font-size: 1.2rem;
 }
 
-.linkbtn:hover{
-    color:crimson;
-    
+.linkbtn:hover {
+    color: crimson;
+
 }
 
 /* .color-nav{
-    background-color: black;
+    background-color: black !important;
 } */
 
 
@@ -61,6 +66,3 @@
 .nav-btn:hover {
     color:crimson;
 }  */
-
-
-

@@ -18,7 +18,7 @@ const onSubstract = () => {
         <div>
             <button className="itemCount-button" onClick={onSubstract}>-</button>
             <span>{count}</span>
-            <button className="itemCount-button" onClick={onAdd}>+</button>
+            {count === stock ? null : <button className="itemCount-button" onClick={onAdd}>+</button>}
         </div>
     );
 };
